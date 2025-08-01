@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-header">
+                <div class="nav-logo">Portfolio</div>
+                
+                <!-- Desktop Nav-->
+                <div class="nav-menu">
+                    <a class="nav-link" data-section="home">Home</a>
+                    <a class="nav-link" data-section="about">About</a>
+                    <a class="nav-link" data-section="skills">Skills</a>
+                    <a class="nav-link" data-section="projects">Projects</a>
+                    <a class="nav-link" data-section="contact">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a class="mobile-nav-link" data-section="home">Home</a>
+                <a class="mobile-nav-link" data-section="about">About</a>
+                <a class="mobile-nav-link" data-section="skills">Skills</a>
+                <a class="mobile-nav-link" data-section="projects">Projects</a>
+                <a class="mobile-nav-link" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Web Developer</span><br>
+                        <span>& Programmer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Crafting digital experiences with precision. Passionate about creating 
+                        efficient, scalable web applications that bridge creativity and functionality.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" data-section="projects">View Work</button>
+                        <button class="btn btn-outline" data-section="contact">Contact Me</button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="profile-container">
+                        <div class="profile-image">
+                            <img src="images/cat.jpg" alt="Profile picture" />
+                        </div>
+                        <div class="profile-border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-description">
+                    3rd Year Information Technology Student passionate about web development 
+                    and modern programming technologies.
+                </p>
+            </div>
+
+            <div class="about-container">
+                <!-- main content and stats -->
+                <div class="about-content">
+                    <div class="about-main">
+                        <h4>My Journey</h4>
+                        <p>
+                            Currently in my third year of Information Technology, I'm focused on mastering 
+                            modern web development technologies. My approach combines continuous learning 
+                            with hands-on project development, always striving to write clean, efficient code.
+                        </p>
+                        <p>
+                            I believe in learning by doing and staying updated with the latest industry trends. 
+                            Every project is an opportunity to grow and implement new concepts I've learned.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3rd</span>
+                                <div class="stat-label">Year Student</div>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <div class="stat-label">Projects Built</div>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <div class="stat-label">Technologies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-description">
+                    Technologies and tools I work with to bring ideas to life
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="skill-title">Frontend Development</h3>
+                    <p class="skill-description">React, TypeScript, Tailwind CSS</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="skill-title">UI/UX Design</h3>
+                    <p class="skill-description">Figma, User Experience, Responsive Design</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="skill-title">Mobile Development</h3>
+                    <p class="skill-description">React Native, Progressive Web Apps</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="skill-title">Backend Development</h3>
+                    <p class="skill-description">Node.js, Python, Database Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">
+                    Some of my recent work that I'm proud to share
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop" alt="E-Commerce Platform" />
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">Modern e-commerce platform with advanced features including payment processing, inventory management, and real-time analytics.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                        <div class="project-buttons">
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </button>
+                            <button class="btn btn-outline btn-sm">
+                                <i class="fab fa-github"></i> Code
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-description">
+                    Ready to start your next project? I'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-input" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-input" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea class="form-textarea" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2024 Portfolio. Crafted with passion and precision.</p>
+                <div class="footer-social">
+                    <button class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <button class="social-link" title="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </button>
+                    <button class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            mobileMenu.classList.toggle('show');
+        });
+
+        // Smooth scrolling and active states
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Add click handlers for navigation links
+        document.querySelectorAll('[data-section]').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const section = link.getAttribute('data-section');
+                scrollToSection(section);
+                
+                // Close mobile menu if open
+                mobileMenuBtn.classList.remove('active');
+                mobileMenu.classList.remove('show');
+            });
+        });
+
+        // Update active nav link on scroll
+        window.addEventListener('scroll', () => {
+            const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+            const scrollPos = window.scrollY + 100;
+
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.offsetHeight;
+                    
+                    if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                        // Remove active class from all links
+                        document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        
+                        // Add active class to current section links
+                        document.querySelectorAll(`[data-section="${sectionId}"]`).forEach(link => {
+                            link.classList.add('active');
+                        });
+                    }
+                }
+            });
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! I\'ll get back to you soon.');
+        });
+    </script>
+</body>
+</html>
